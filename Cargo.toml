@@ -1,7 +1,19 @@
 [package]
 name = "geo-tileset"
 version = "0.1.0"
+authors = ["azishio"]
 edition = "2021"
+description = "Structure representing tileset.json for 3D Tiles"
+
+documentation = "https://docs.rs/geo-tileset"
+homepage = "https://crates.io/crates/geo-tileset"
+repository = "https://github.com/azishio/geo-tileset-rs"
+
+readme = "README.md"
+
+keywords = ["tiles", "tileset", "geo", "json"]
+categories = ["data-structures", "parsing", "science::geo"]
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 serde = { version = "1.0.204", features = ["derive"] }
