@@ -2,6 +2,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::TemplateUri;
 
+
 /// An object describing the location of subtree files.
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Subtrees {

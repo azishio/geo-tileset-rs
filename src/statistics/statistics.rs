@@ -4,6 +4,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::StatisticsClass;
 
+
 /// Statistics about entities.
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Statistics {

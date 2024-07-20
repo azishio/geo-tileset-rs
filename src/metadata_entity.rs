@@ -4,6 +4,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::AnyValue;
 
+
 /// An object containing a reference to a class from a metadata schema, and property values that conform to the properties of that class.
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct MetadataEntity {

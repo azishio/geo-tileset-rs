@@ -37,14 +37,17 @@ pub mod common {
 
     /// Common definitions used in schema files.
     pub mod definitions;
+
     /// TODO Unimplemented
     ///
     /// Dictionary object with extension-specific objects.
     pub mod extension;
+
     /// TODO Unimplemented
     ///
     /// Application-specific data.
     pub mod extras;
+
     /// A basis for storing extensions and extras.
     pub mod root_property;
 }
@@ -55,6 +58,7 @@ pub mod property_table {
 
     /// An array of binary property values. This represents one column of a property table, and contains one value of a certain property for each metadata entity.
     pub mod property_table_property;
+
     /// Properties conforming to a class, organized as property values stored in binary columnar arrays.
     pub mod property_table;
 }
@@ -68,12 +72,16 @@ pub mod schema {
 
     /// A single property of a metadata class.
     pub mod class_property;
+
     /// A class containing a set of properties.
     pub mod class;
+
     /// An object defining the values of an enum.
     pub mod enum_;
+
     /// An enum value.
     pub mod enum_value;
+
     /// An object defining classes and enums.
     pub mod schema;
 }
@@ -85,8 +93,10 @@ pub mod statistics {
 
     /// Statistics about property values.
     pub mod statistics_class_property;
+
     /// Statistics about entities that conform to a class that was defined in a metadata schema.
     pub mod statistics_class;
+
     /// Statistics about entities.
     pub mod statistics;
 }
@@ -104,20 +114,28 @@ pub mod styling {
 
     /// A 3D Tiles style with additional properties for Point Clouds.
     pub mod pnts_style;
+
     /// A boolean or string with a 3D Tiles style expression that evaluates to a boolean. Details are described in the 3D Tiles Styling specification.
     pub mod style_boolean_expression;
+
     /// 3D Tiles style `expression` that evaluates to a Color. Details are described in the 3D Tiles Styling specification.
     pub mod style_color_expression;
+
     /// An `expression` evaluated as the result of a condition being true. An array of two expressions. If the first expression is evaluated and the result is `true`, then the second expression is evaluated and returned as the result of the condition.
     pub mod style_conditions_condition;
+
     /// A series of conditions evaluated in order, like a series of if...else statements that result in an expression being evaluated.
     pub mod style_conditions;
+
     /// A valid 3D Tiles style expression. Details are described in the 3D Tiles Styling specification.
     pub mod style_expression;
+
     /// A series of property names and the `expression` to evaluate for the value of that property.
     pub mod style_meta;
+
     /// 3D Tiles style expression that evaluates to a number. Details are described in the 3D Tiles Styling specification.
     pub mod style_number_expression;
+
     /// A 3D Tiles style.
     pub mod style;
 }
@@ -130,13 +148,17 @@ pub mod subtree {
 
     /// An object describing the availability of a set of elements.
     pub mod availability;
+
     /// A buffer is a binary blob. It is either the binary chunk of the subtree file, or an external buffer referenced by a URI.
     pub mod buffer;
+
     /// A contiguous subset of a buffer
     pub mod buffer_view;
+
     /// An object describing the availability of tiles and content in a subtree, as well as availability of children subtrees. May also store metadata for available tiles and content.
     pub mod subtree;
 }
+
 
 /// Unimplemented
 pub mod tile_formats {

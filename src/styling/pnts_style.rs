@@ -2,6 +2,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::{StyleConditions, StyleNumberExpression};
 
+
 /// A `number expression` or `conditions` property which determines the size of the points in pixels.
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum PointSize {
@@ -14,6 +15,7 @@ impl Default for PointSize {
         PointSize::NumberExpression(StyleNumberExpression::Number(1.0))
     }
 }
+
 
 /// A 3D Tiles style with additional properties for Point Clouds.
 #[serde(rename_all = "camelCase")]

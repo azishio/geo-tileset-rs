@@ -16,6 +16,7 @@ impl Default for Show {
     }
 }
 
+
 /// A `color expression` or `conditions` property which determines the color blended with the feature's intrinsic color.
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum Color {
@@ -29,16 +30,20 @@ impl Default for Color {
     }
 }
 
+
 /// A 3D Tiles style.
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Style {
     /// A dictionary object of `expression` strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub defines: Option<HashMap<String, StyleExpression>>,
+
     /// A `boolean expression` or `conditions` property which determines if a feature should be shown.
     pub show: Show,
+
     /// A `color expression` or `conditions` property which determines the color blended with the feature's intrinsic color.
     pub color: Color,
+
     /// A `meta` object which determines the values of non-visual properties of the feature.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub meta: Option<StyleMeta>,
