@@ -5,8 +5,8 @@ use serde::{Deserialize, Serialize};
 use crate::ClassProperty;
 
 /// A class containing a set of properties.
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct Class {
     /// The name of the class, e.g. for display purposes.
     #[serde(skip_serializing_if = "Option::is_none")]

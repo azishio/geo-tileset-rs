@@ -13,8 +13,8 @@ pub enum Occurrences {
 
 
 /// Statistics about property values.
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct StatisticsClassProperty {
     /// The minimum property value occurring in the tileset. Only applicable to `SCALAR`, `VECN`, and `MATN` types. This is the minimum of all property values, after the transforms based on the `normalized`, `offset`, and `scale` properties have been applied.
     #[serde(skip_serializing_if = "Option::is_none")]

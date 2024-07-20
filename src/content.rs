@@ -3,8 +3,8 @@ use serde::{Deserialize, Serialize};
 use crate::{BoundingVolume, MetadataEntity};
 
 /// Metadata about the tile's content and a link to the content.
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct Content {
     /// An optional bounding volume that tightly encloses tile content. tile.boundingVolume provides spatial coherence and tile.content.boundingVolume enables tight view frustum culling. When this is omitted, tile.boundingVolume is used.
     #[serde(skip_serializing_if = "Option::is_none")]

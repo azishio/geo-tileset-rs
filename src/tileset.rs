@@ -5,8 +5,8 @@ use serde::{Deserialize, Serialize};
 use crate::{Asset, Group, MetadataEntity, Properties, Schema, Statistics, Tile};
 
 /// A 3D Tiles tileset.
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct Tileset {
     /// Metadata about the entire tileset.
     pub asset: Asset,

@@ -39,8 +39,8 @@ pub enum ComponentType {
 
 
 /// A single property of a metadata class.
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct ClassProperty {
     /// The name of the property, e.g. for display purposes.
     #[serde(skip_serializing_if = "Option::is_none")]

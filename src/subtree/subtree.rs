@@ -3,8 +3,8 @@ use serde::{Deserialize, Serialize};
 use crate::{Availability, Buffer, BufferView, MetadataEntity, PropertyTable};
 
 /// An object describing the availability of tiles and content in a subtree, as well as availability of children subtrees. May also store metadata for available tiles and content.
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct Subtree {
     /// An array of buffers.
     #[serde(skip_serializing_if = "Option::is_none")]

@@ -1,8 +1,8 @@
 use serde::{Deserialize, Serialize};
 
 /// A contiguous subset of a buffer
-#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct BufferView {
     /// The index of the buffer.
     pub buffer: i32,
