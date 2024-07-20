@@ -35,9 +35,9 @@ pub struct Style {
     /// A dictionary object of `expression` strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression.
     pub defines: Option<HashMap<String, StyleExpression>>,
     /// A `boolean expression` or `conditions` property which determines if a feature should be shown.
-    pub show: Option<Show>,
+    pub show: Show,
     /// A `color expression` or `conditions` property which determines the color blended with the feature's intrinsic color.
-    pub color: Option<Color>,
+    pub color: Color,
     /// A `meta` object which determines the values of non-visual properties of the feature.
     pub meta: Option<StyleMeta>,
 }

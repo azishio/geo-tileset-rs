@@ -19,5 +19,5 @@ impl Default for PointSize {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct PntsStyle {
     /// A `number expression` or `conditions` property which determines the size of the points in pixels.
-    pub point_size: Option<PointSize>,
+    pub point_size: PointSize,
 }

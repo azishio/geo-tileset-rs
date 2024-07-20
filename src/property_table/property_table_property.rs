@@ -27,9 +27,9 @@ pub struct PropertyTableProperty {
     /// The index of the buffer view containing offsets for strings. The number of offsets is equal to the number of string elements plus one. The offsets represent the byte offsets of each string in the property array (stored in `values`), with the last offset representing the byte offset after the last string. The string byte length is computed using the difference between the subsequent offset and the current offset. The data type of these offsets is determined by `stringOffsetType`. The buffer view `byteOffset` shall be aligned to a multiple of the `stringOffsetType` size.
     pub string_offsets: Option<i32>,
     /// The type of values in `arrayOffsets`.
-    pub array_offset_type: Option<OffsetType>,
+    pub array_offset_type: OffsetType,
     /// The type of values in `stringOffsets`.
-    pub string_offset_type: Option<OffsetType>,
+    pub string_offset_type: OffsetType,
     /// An offset to apply to property values. Only applicable when the component type is `FLOAT32` or `FLOAT64`, or when the property is `normalized`. Overrides the class property's `offset` if both are defined.
     pub offset: Option<NumericValue>,
     /// A scale to apply to property values. Only applicable when the component type is `FLOAT32` or `FLOAT64`, or when the property is `normalized`. Overrides the class property's `scale` if both are defined.
