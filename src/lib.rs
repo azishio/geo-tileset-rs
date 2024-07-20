@@ -1,3 +1,5 @@
+pub use serde;
+
 pub use asset::*;
 pub use bounding_volume::*;
 pub use common::*;
