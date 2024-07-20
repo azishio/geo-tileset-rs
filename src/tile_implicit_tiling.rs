@@ -7,11 +7,13 @@ use crate::Subtrees;
 pub enum SubdivisionScheme {
     QUADTREE,
     OCTREE,
+    #[serde(untagged)]
     OTHER(String),
 }
 
 
 /// This object allows a tile to be implicitly subdivided. Tile and content availability and metadata is stored in subtrees which are referenced externally.
+#[serde(rename_all = "camelCase")]
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct TileImplicittiling {
     /// A string describing the subdivision scheme used within the tileset.

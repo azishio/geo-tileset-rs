@@ -11,5 +11,6 @@ pub struct MetadataEntity {
     pub class: String,
 
     /// A dictionary, where each key corresponds to a property ID in the class' `properties` dictionary and each value contains the property values. The type of the value shall match the property definition: For `BOOLEAN` use `true` or `false`. For `STRING` use a JSON string. For numeric types use a JSON number. For `ENUM` use a valid enum `name`, not an integer value. For `ARRAY`, `VECN`, and `MATN` types use a JSON array containing values matching the `componentType`. Required properties shall be included in this dictionary.
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub properties: Option<HashMap<String, AnyValue>>,
 }
