@@ -55,8 +55,8 @@ the [schema](https://github.com/CesiumGS/3d-tiles/tree/main/specification/schema
 
 Licensed under either of
 
-+ Apache License, Version 2.0, ([LICENSE-APACHE](../vec-x-rs/LICENSE-APACHE)
++ Apache License, Version 2.0, ([LICENSE-APACHE](./LICENSE-APACHE)
   or http://www.apache.org/licenses/LICENSE-2.0)
-+ MIT license ([LICENSE-MIT](../vec-x-rs/LICENSE-MIT) or http://opensource.org/licenses/MIT)
++ MIT license ([LICENSE-MIT](./LICENSE-MIT) or http://opensource.org/licenses/MIT)
 
 at your option.
